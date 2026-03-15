@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.expert.mapper.AchievementsMapper">
+    <insert id="insert">
+        insert into achievements(expert_id,type,title,achievement_date,description) values
+        <foreach collection="achievements" item="ach" separator=",">
+            (#{ach.expertId},#{ach.type},#{ach.title},#{ach.achievementDate},#{ach.description})
+        </foreach>
+    </insert>
+
+    <delete id="delete">
+        delete from achievements where expert_id in
+        <foreach collection="expertIds" item="expertId" open="(" separator="," close=")">
+            #{expertId}
+        </foreach>
+    </delete>
+</mapper>

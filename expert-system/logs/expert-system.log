@@ -1,0 +1,151 @@
+2025-11-29T14:48:29.757+08:00  INFO 115444 --- [restartedMain] com.expert.ExpertWebApplication          : Starting ExpertWebApplication using Java 17.0.16 with PID 115444 (E:\JavaXiangmu\expert-system\expert-web\target\classes started by 鱼 in E:\JavaXiangmu\expert-system)
+2025-11-29T14:48:29.762+08:00 DEBUG 115444 --- [restartedMain] com.expert.ExpertWebApplication          : Running with Spring Boot v3.1.5, Spring v6.0.13
+2025-11-29T14:48:29.763+08:00  INFO 115444 --- [restartedMain] com.expert.ExpertWebApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-29T14:48:29.808+08:00  INFO 115444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-29T14:48:29.809+08:00  INFO 115444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-29T14:48:31.761+08:00  INFO 115444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-11-29T14:48:31.769+08:00  INFO 115444 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-29T14:48:31.769+08:00  INFO 115444 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-11-29T14:48:31.820+08:00  INFO 115444 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-11-29T14:48:31.820+08:00  INFO 115444 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2011 ms
+2025-11-29T14:48:32.316+08:00  INFO 115444 --- [restartedMain] com.expert.config.WebMvcConfiguration    : 开始注册自定义拦截器...
+2025-11-29T14:48:32.352+08:00  INFO 115444 --- [restartedMain] com.expert.config.WebMvcConfiguration    : 自定义消息转换器启用
+2025-11-29T14:48:32.549+08:00  INFO 115444 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2025-11-29T14:48:32.557+08:00  INFO 115444 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-11-29T14:48:32.557+08:00  INFO 115444 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2025-11-29T14:48:32.558+08:00  INFO 115444 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2025-11-29T14:48:32.558+08:00  INFO 115444 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2025-11-29T14:48:32.559+08:00  INFO 115444 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2025-11-29T14:48:32.559+08:00  INFO 115444 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2025-11-29T14:48:32.559+08:00  INFO 115444 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5429d15d
+2025-11-29T14:48:32.675+08:00  INFO 115444 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-29T14:48:32.679+08:00  INFO 115444 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-11-29T14:48:32.726+08:00  INFO 115444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-11-29T14:48:32.727+08:00  INFO 115444 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2025-11-29T14:48:32.727+08:00  INFO 115444 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2025-11-29T14:48:32.736+08:00  INFO 115444 --- [restartedMain] com.expert.ExpertWebApplication          : Started ExpertWebApplication in 3.382 seconds (process running for 4.307)
+2025-11-29T14:48:32.742+08:00  INFO 115444 --- [restartedMain] com.expert.ExpertWebApplication          : expert-web started
+2025-11-29T14:48:33.357+08:00  INFO 115444 --- [RMI TCP Connection(3)-192.168.148.1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-29T14:48:33.358+08:00  INFO 115444 --- [RMI TCP Connection(3)-192.168.148.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-29T14:48:33.360+08:00  INFO 115444 --- [RMI TCP Connection(3)-192.168.148.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-29T14:48:33.452+08:00  INFO 115444 --- [RMI TCP Connection(1)-192.168.148.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2025-11-29T14:50:22.159+08:00  INFO 115444 --- [http-nio-8080-exec-8] com.expert.controller.AuthController     : 用户登录LoginRequestDTO(username=superadmin, password=123456)
+2025-11-29T14:50:22.198+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] com.expert.mapper.SysUserMapper.login    : ==>  Preparing: SELECT * FROM sys_user WHERE username = ? AND password = ?
+2025-11-29T14:50:22.219+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] com.expert.mapper.SysUserMapper.login    : ==> Parameters: superadmin(String), 123456(String)
+2025-11-29T14:50:22.255+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] com.expert.mapper.SysUserMapper.login    : <==      Total: 1
+2025-11-29T14:51:09.546+08:00  INFO 115444 --- [http-nio-8080-exec-1] c.e.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJ1c2VySWQiOjEsInN0YXR1cyI6IkFDVElWRSIsImV4cCI6MTc2NDQwMDgyMn0.-r8EtUHR7_E8dZr8oipUCsvw5sdKML2Ug6LKmZI1rMw
+2025-11-29T14:51:09.605+08:00  INFO 115444 --- [http-nio-8080-exec-1] c.e.i.JwtTokenAdminInterceptor           : 当前用户id：1
+2025-11-29T14:51:09.617+08:00  INFO 115444 --- [http-nio-8080-exec-1] c.expert.controller.ExpertsController    : 专家信息分页查询:ExpertPageRequestDTO(page=1, pageSize=20, name=, status=, expertType=, weight=null)
+2025-11-29T14:51:09.659+08:00 DEBUG 115444 --- [http-nio-8080-exec-1] com.expert.mapper.ExpertsMapper.page     : ==>  Preparing: select id,name,unit,title,field,expert_type,weight,guidance_count,last_invite,status from experts
+2025-11-29T14:51:09.660+08:00 DEBUG 115444 --- [http-nio-8080-exec-1] com.expert.mapper.ExpertsMapper.page     : ==> Parameters: 
+2025-11-29T14:51:09.678+08:00 DEBUG 115444 --- [http-nio-8080-exec-1] com.expert.mapper.ExpertsMapper.page     : <==      Total: 18
+2025-11-29T14:51:15.452+08:00  INFO 115444 --- [http-nio-8080-exec-2] c.e.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJ1c2VySWQiOjEsInN0YXR1cyI6IkFDVElWRSIsImV4cCI6MTc2NDQwMDgyMn0.-r8EtUHR7_E8dZr8oipUCsvw5sdKML2Ug6LKmZI1rMw
+2025-11-29T14:51:15.455+08:00  INFO 115444 --- [http-nio-8080-exec-2] c.e.i.JwtTokenAdminInterceptor           : 当前用户id：1
+2025-11-29T14:51:15.462+08:00  INFO 115444 --- [http-nio-8080-exec-2] c.expert.controller.ExpertsController    : 获取专家详细信息：1
+2025-11-29T14:51:15.462+08:00 DEBUG 115444 --- [http-nio-8080-exec-2] c.e.m.ExpertsMapper.getDetailExpertById  : ==>  Preparing: SELECT * FROM experts where id=?
+2025-11-29T14:51:15.463+08:00 DEBUG 115444 --- [http-nio-8080-exec-2] c.e.m.ExpertsMapper.getDetailExpertById  : ==> Parameters: 1(Long)
+2025-11-29T14:51:15.469+08:00 DEBUG 115444 --- [http-nio-8080-exec-2] c.e.m.ExpertsMapper.getDetailExpertById  : <==      Total: 1
+2025-11-29T14:51:15.470+08:00 DEBUG 115444 --- [http-nio-8080-exec-2] c.e.m.P.getProjectByExpertId             : ==>  Preparing: SELECT ep.`project_id` AS id, p.`name` AS project_name, p.`track`, p.`category`, ep.`role`, ep.`status`, p.stage, ep.`created_time` FROM expert_projects AS ep LEFT JOIN projects AS p ON ep.project_id=p.`id` where expert_id =?
+2025-11-29T14:51:15.473+08:00 DEBUG 115444 --- [http-nio-8080-exec-2] c.e.m.P.getProjectByExpertId             : ==> Parameters: 1(Long)
+2025-11-29T14:51:15.483+08:00 DEBUG 115444 --- [http-nio-8080-exec-2] c.e.m.P.getProjectByExpertId             : <==      Total: 2
+2025-11-29T14:51:15.484+08:00 DEBUG 115444 --- [http-nio-8080-exec-2] c.e.m.I.getInvitationById                : ==>  Preparing: SELECT i.id, p.name AS project_name, i.invite_time, su.name AS inviter_name, i.status, i.response_time, i.notes FROM invitations AS i LEFT JOIN sys_user AS su ON i.inviter_id=su.user_id LEFT JOIN projects AS p ON i.project_id=p.id where expert_id=?
+2025-11-29T14:51:15.486+08:00 DEBUG 115444 --- [http-nio-8080-exec-2] c.e.m.I.getInvitationById                : ==> Parameters: 1(Long)
+2025-11-29T14:51:15.493+08:00 DEBUG 115444 --- [http-nio-8080-exec-2] c.e.m.I.getInvitationById                : <==      Total: 2
+2025-11-29T14:51:15.494+08:00 DEBUG 115444 --- [http-nio-8080-exec-2] c.e.m.A.getAchievementById               : ==>  Preparing: SELECT id,title,achievement_date,description FROM achievements where expert_id=?
+2025-11-29T14:51:15.494+08:00 DEBUG 115444 --- [http-nio-8080-exec-2] c.e.m.A.getAchievementById               : ==> Parameters: 1(Long)
+2025-11-29T14:51:15.500+08:00 DEBUG 115444 --- [http-nio-8080-exec-2] c.e.m.A.getAchievementById               : <==      Total: 3
+2025-11-29T14:51:47.942+08:00  INFO 115444 --- [http-nio-8080-exec-4] c.e.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJ1c2VySWQiOjEsInN0YXR1cyI6IkFDVElWRSIsImV4cCI6MTc2NDQwMDgyMn0.-r8EtUHR7_E8dZr8oipUCsvw5sdKML2Ug6LKmZI1rMw
+2025-11-29T14:51:47.944+08:00  INFO 115444 --- [http-nio-8080-exec-4] c.e.i.JwtTokenAdminInterceptor           : 当前用户id：1
+2025-11-29T14:51:47.945+08:00  INFO 115444 --- [http-nio-8080-exec-4] c.expert.controller.ProjectsController   : 分页查询：ProjectPageRequestDTO(page=1, pageSize=20, name=null, track=null, stage=null, status=null, projectLevel=null)
+2025-11-29T14:51:47.953+08:00 DEBUG 115444 --- [http-nio-8080-exec-4] c.e.mapper.ProjectsMapper.getPageList    : ==>  Preparing: select * from projects
+2025-11-29T14:51:47.953+08:00 DEBUG 115444 --- [http-nio-8080-exec-4] c.e.mapper.ProjectsMapper.getPageList    : ==> Parameters: 
+2025-11-29T14:51:47.967+08:00 DEBUG 115444 --- [http-nio-8080-exec-4] c.e.mapper.ProjectsMapper.getPageList    : <==      Total: 20
+2025-11-29T14:52:14.737+08:00  INFO 115444 --- [http-nio-8080-exec-5] c.e.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJ1c2VySWQiOjEsInN0YXR1cyI6IkFDVElWRSIsImV4cCI6MTc2NDQwMDgyMn0.-r8EtUHR7_E8dZr8oipUCsvw5sdKML2Ug6LKmZI1rMw
+2025-11-29T14:52:14.739+08:00  INFO 115444 --- [http-nio-8080-exec-5] c.e.i.JwtTokenAdminInterceptor           : 当前用户id：1
+2025-11-29T14:52:14.740+08:00  INFO 115444 --- [http-nio-8080-exec-5] c.expert.controller.ProjectsController   : 获取项目信息：1
+2025-11-29T14:52:14.741+08:00 DEBUG 115444 --- [http-nio-8080-exec-5] c.e.m.ProjectsMapper.getProjectById      : ==>  Preparing: select * from projects where id=?
+2025-11-29T14:52:14.743+08:00 DEBUG 115444 --- [http-nio-8080-exec-5] c.e.m.ProjectsMapper.getProjectById      : ==> Parameters: 1(Long)
+2025-11-29T14:52:14.745+08:00 DEBUG 115444 --- [http-nio-8080-exec-5] c.e.m.ProjectsMapper.getProjectById      : <==      Total: 1
+2025-11-29T14:52:14.756+08:00  INFO 115444 --- [http-nio-8080-exec-6] c.e.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJ1c2VySWQiOjEsInN0YXR1cyI6IkFDVElWRSIsImV4cCI6MTc2NDQwMDgyMn0.-r8EtUHR7_E8dZr8oipUCsvw5sdKML2Ug6LKmZI1rMw
+2025-11-29T14:52:14.757+08:00  INFO 115444 --- [http-nio-8080-exec-6] c.e.i.JwtTokenAdminInterceptor           : 当前用户id：1
+2025-11-29T14:52:14.758+08:00  INFO 115444 --- [http-nio-8080-exec-6] c.expert.controller.ProjectsController   : 获取项目信息：1
+2025-11-29T14:52:14.758+08:00 DEBUG 115444 --- [http-nio-8080-exec-6] c.e.m.ProjectsMapper.getProjectById      : ==>  Preparing: select * from projects where id=?
+2025-11-29T14:52:14.758+08:00 DEBUG 115444 --- [http-nio-8080-exec-6] c.e.m.ProjectsMapper.getProjectById      : ==> Parameters: 1(Long)
+2025-11-29T14:52:14.760+08:00 DEBUG 115444 --- [http-nio-8080-exec-6] c.e.m.ProjectsMapper.getProjectById      : <==      Total: 1
+2025-11-29T15:05:25.826+08:00  INFO 115444 --- [http-nio-8080-exec-7] c.e.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJ1c2VySWQiOjEsInN0YXR1cyI6IkFDVElWRSIsImV4cCI6MTc2NDQwMDgyMn0.-r8EtUHR7_E8dZr8oipUCsvw5sdKML2Ug6LKmZI1rMw
+2025-11-29T15:05:25.827+08:00  INFO 115444 --- [http-nio-8080-exec-7] c.e.i.JwtTokenAdminInterceptor           : 当前用户id：1
+2025-11-29T15:05:25.828+08:00  INFO 115444 --- [http-nio-8080-exec-7] c.expert.controller.ExpertsController    : 专家信息分页查询:ExpertPageRequestDTO(page=1, pageSize=20, name=, status=, expertType=, weight=null)
+2025-11-29T15:05:25.829+08:00 DEBUG 115444 --- [http-nio-8080-exec-7] com.expert.mapper.ExpertsMapper.page     : ==>  Preparing: select id,name,unit,title,field,expert_type,weight,guidance_count,last_invite,status from experts
+2025-11-29T15:05:25.830+08:00 DEBUG 115444 --- [http-nio-8080-exec-7] com.expert.mapper.ExpertsMapper.page     : ==> Parameters: 
+2025-11-29T15:05:25.834+08:00 DEBUG 115444 --- [http-nio-8080-exec-7] com.expert.mapper.ExpertsMapper.page     : <==      Total: 18
+2025-11-29T15:05:35.296+08:00  INFO 115444 --- [http-nio-8080-exec-3] c.e.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJ1c2VySWQiOjEsInN0YXR1cyI6IkFDVElWRSIsImV4cCI6MTc2NDQwMDgyMn0.-r8EtUHR7_E8dZr8oipUCsvw5sdKML2Ug6LKmZI1rMw
+2025-11-29T15:05:35.298+08:00  INFO 115444 --- [http-nio-8080-exec-3] c.e.i.JwtTokenAdminInterceptor           : 当前用户id：1
+2025-11-29T15:05:35.299+08:00  INFO 115444 --- [http-nio-8080-exec-3] c.expert.controller.ExpertsController    : 获取专家详细信息：1
+2025-11-29T15:05:35.299+08:00 DEBUG 115444 --- [http-nio-8080-exec-3] c.e.m.ExpertsMapper.getDetailExpertById  : ==>  Preparing: SELECT * FROM experts where id=?
+2025-11-29T15:05:35.300+08:00 DEBUG 115444 --- [http-nio-8080-exec-3] c.e.m.ExpertsMapper.getDetailExpertById  : ==> Parameters: 1(Long)
+2025-11-29T15:05:35.302+08:00 DEBUG 115444 --- [http-nio-8080-exec-3] c.e.m.ExpertsMapper.getDetailExpertById  : <==      Total: 1
+2025-11-29T15:05:35.302+08:00 DEBUG 115444 --- [http-nio-8080-exec-3] c.e.m.P.getProjectByExpertId             : ==>  Preparing: SELECT ep.`project_id` AS id, p.`name` AS project_name, p.`track`, p.`category`, ep.`role`, ep.`status`, p.stage, ep.`created_time` FROM expert_projects AS ep LEFT JOIN projects AS p ON ep.project_id=p.`id` where expert_id =?
+2025-11-29T15:05:35.302+08:00 DEBUG 115444 --- [http-nio-8080-exec-3] c.e.m.P.getProjectByExpertId             : ==> Parameters: 1(Long)
+2025-11-29T15:05:35.304+08:00 DEBUG 115444 --- [http-nio-8080-exec-3] c.e.m.P.getProjectByExpertId             : <==      Total: 2
+2025-11-29T15:05:35.305+08:00 DEBUG 115444 --- [http-nio-8080-exec-3] c.e.m.I.getInvitationById                : ==>  Preparing: SELECT i.id, p.name AS project_name, i.invite_time, su.name AS inviter_name, i.status, i.response_time, i.notes FROM invitations AS i LEFT JOIN sys_user AS su ON i.inviter_id=su.user_id LEFT JOIN projects AS p ON i.project_id=p.id where expert_id=?
+2025-11-29T15:05:35.305+08:00 DEBUG 115444 --- [http-nio-8080-exec-3] c.e.m.I.getInvitationById                : ==> Parameters: 1(Long)
+2025-11-29T15:05:35.306+08:00 DEBUG 115444 --- [http-nio-8080-exec-3] c.e.m.I.getInvitationById                : <==      Total: 2
+2025-11-29T15:05:35.306+08:00 DEBUG 115444 --- [http-nio-8080-exec-3] c.e.m.A.getAchievementById               : ==>  Preparing: SELECT id,title,achievement_date,description FROM achievements where expert_id=?
+2025-11-29T15:05:35.307+08:00 DEBUG 115444 --- [http-nio-8080-exec-3] c.e.m.A.getAchievementById               : ==> Parameters: 1(Long)
+2025-11-29T15:05:35.307+08:00 DEBUG 115444 --- [http-nio-8080-exec-3] c.e.m.A.getAchievementById               : <==      Total: 3
+2025-11-29T15:06:19.021+08:00  INFO 115444 --- [http-nio-8080-exec-9] c.e.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJ1c2VySWQiOjEsInN0YXR1cyI6IkFDVElWRSIsImV4cCI6MTc2NDQwMDgyMn0.-r8EtUHR7_E8dZr8oipUCsvw5sdKML2Ug6LKmZI1rMw
+2025-11-29T15:06:19.022+08:00  INFO 115444 --- [http-nio-8080-exec-9] c.e.i.JwtTokenAdminInterceptor           : 当前用户id：1
+2025-11-29T15:06:19.022+08:00  INFO 115444 --- [http-nio-8080-exec-9] c.expert.controller.ExpertsController    : 专家信息分页查询:ExpertPageRequestDTO(page=1, pageSize=20, name=, status=, expertType=, weight=null)
+2025-11-29T15:06:19.023+08:00 DEBUG 115444 --- [http-nio-8080-exec-9] com.expert.mapper.ExpertsMapper.page     : ==>  Preparing: select id,name,unit,title,field,expert_type,weight,guidance_count,last_invite,status from experts
+2025-11-29T15:06:19.023+08:00 DEBUG 115444 --- [http-nio-8080-exec-9] com.expert.mapper.ExpertsMapper.page     : ==> Parameters: 
+2025-11-29T15:06:19.025+08:00 DEBUG 115444 --- [http-nio-8080-exec-9] com.expert.mapper.ExpertsMapper.page     : <==      Total: 18
+2025-11-29T15:13:27.975+08:00  INFO 115444 --- [http-nio-8080-exec-10] c.e.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJ1c2VySWQiOjEsInN0YXR1cyI6IkFDVElWRSIsImV4cCI6MTc2NDQwMDgyMn0.-r8EtUHR7_E8dZr8oipUCsvw5sdKML2Ug6LKmZI1rMw
+2025-11-29T15:13:27.978+08:00  INFO 115444 --- [http-nio-8080-exec-10] c.e.i.JwtTokenAdminInterceptor           : 当前用户id：1
+2025-11-29T15:13:27.978+08:00  INFO 115444 --- [http-nio-8080-exec-10] c.expert.controller.ExpertsController    : 获取专家详细信息：1
+2025-11-29T15:13:27.981+08:00 DEBUG 115444 --- [http-nio-8080-exec-10] c.e.m.ExpertsMapper.getDetailExpertById  : ==>  Preparing: SELECT * FROM experts where id=?
+2025-11-29T15:13:27.981+08:00 DEBUG 115444 --- [http-nio-8080-exec-10] c.e.m.ExpertsMapper.getDetailExpertById  : ==> Parameters: 1(Long)
+2025-11-29T15:13:27.987+08:00 DEBUG 115444 --- [http-nio-8080-exec-10] c.e.m.ExpertsMapper.getDetailExpertById  : <==      Total: 1
+2025-11-29T15:13:27.990+08:00 DEBUG 115444 --- [http-nio-8080-exec-10] c.e.m.P.getProjectByExpertId             : ==>  Preparing: SELECT ep.`project_id` AS id, p.`name` AS project_name, p.`track`, p.`category`, ep.`role`, ep.`status`, p.stage, ep.`created_time` FROM expert_projects AS ep LEFT JOIN projects AS p ON ep.project_id=p.`id` where expert_id =?
+2025-11-29T15:13:27.991+08:00 DEBUG 115444 --- [http-nio-8080-exec-10] c.e.m.P.getProjectByExpertId             : ==> Parameters: 1(Long)
+2025-11-29T15:13:27.993+08:00 DEBUG 115444 --- [http-nio-8080-exec-10] c.e.m.P.getProjectByExpertId             : <==      Total: 2
+2025-11-29T15:13:27.994+08:00 DEBUG 115444 --- [http-nio-8080-exec-10] c.e.m.I.getInvitationById                : ==>  Preparing: SELECT i.id, p.name AS project_name, i.invite_time, su.name AS inviter_name, i.status, i.response_time, i.notes FROM invitations AS i LEFT JOIN sys_user AS su ON i.inviter_id=su.user_id LEFT JOIN projects AS p ON i.project_id=p.id where expert_id=?
+2025-11-29T15:13:27.994+08:00 DEBUG 115444 --- [http-nio-8080-exec-10] c.e.m.I.getInvitationById                : ==> Parameters: 1(Long)
+2025-11-29T15:13:27.998+08:00 DEBUG 115444 --- [http-nio-8080-exec-10] c.e.m.I.getInvitationById                : <==      Total: 2
+2025-11-29T15:13:27.999+08:00 DEBUG 115444 --- [http-nio-8080-exec-10] c.e.m.A.getAchievementById               : ==>  Preparing: SELECT id,title,achievement_date,description FROM achievements where expert_id=?
+2025-11-29T15:13:27.999+08:00 DEBUG 115444 --- [http-nio-8080-exec-10] c.e.m.A.getAchievementById               : ==> Parameters: 1(Long)
+2025-11-29T15:13:28.001+08:00 DEBUG 115444 --- [http-nio-8080-exec-10] c.e.m.A.getAchievementById               : <==      Total: 3
+2025-11-29T15:13:28.014+08:00  INFO 115444 --- [http-nio-8080-exec-8] c.e.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJ1c2VySWQiOjEsInN0YXR1cyI6IkFDVElWRSIsImV4cCI6MTc2NDQwMDgyMn0.-r8EtUHR7_E8dZr8oipUCsvw5sdKML2Ug6LKmZI1rMw
+2025-11-29T15:13:28.015+08:00  INFO 115444 --- [http-nio-8080-exec-8] c.e.i.JwtTokenAdminInterceptor           : 当前用户id：1
+2025-11-29T15:13:28.015+08:00  INFO 115444 --- [http-nio-8080-exec-8] c.expert.controller.ExpertsController    : 获取专家详细信息：1
+2025-11-29T15:13:28.016+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] c.e.m.ExpertsMapper.getDetailExpertById  : ==>  Preparing: SELECT * FROM experts where id=?
+2025-11-29T15:13:28.016+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] c.e.m.ExpertsMapper.getDetailExpertById  : ==> Parameters: 1(Long)
+2025-11-29T15:13:28.019+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] c.e.m.ExpertsMapper.getDetailExpertById  : <==      Total: 1
+2025-11-29T15:13:28.021+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] c.e.m.P.getProjectByExpertId             : ==>  Preparing: SELECT ep.`project_id` AS id, p.`name` AS project_name, p.`track`, p.`category`, ep.`role`, ep.`status`, p.stage, ep.`created_time` FROM expert_projects AS ep LEFT JOIN projects AS p ON ep.project_id=p.`id` where expert_id =?
+2025-11-29T15:13:28.022+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] c.e.m.P.getProjectByExpertId             : ==> Parameters: 1(Long)
+2025-11-29T15:13:28.023+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] c.e.m.P.getProjectByExpertId             : <==      Total: 2
+2025-11-29T15:13:28.024+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] c.e.m.I.getInvitationById                : ==>  Preparing: SELECT i.id, p.name AS project_name, i.invite_time, su.name AS inviter_name, i.status, i.response_time, i.notes FROM invitations AS i LEFT JOIN sys_user AS su ON i.inviter_id=su.user_id LEFT JOIN projects AS p ON i.project_id=p.id where expert_id=?
+2025-11-29T15:13:28.024+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] c.e.m.I.getInvitationById                : ==> Parameters: 1(Long)
+2025-11-29T15:13:28.025+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] c.e.m.I.getInvitationById                : <==      Total: 2
+2025-11-29T15:13:28.027+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] c.e.m.A.getAchievementById               : ==>  Preparing: SELECT id,title,achievement_date,description FROM achievements where expert_id=?
+2025-11-29T15:13:28.027+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] c.e.m.A.getAchievementById               : ==> Parameters: 1(Long)
+2025-11-29T15:13:28.028+08:00 DEBUG 115444 --- [http-nio-8080-exec-8] c.e.m.A.getAchievementById               : <==      Total: 3
+2025-11-29T15:13:56.732+08:00  INFO 115444 --- [http-nio-8080-exec-1] c.e.i.JwtTokenAdminInterceptor           : jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJ1c2VySWQiOjEsInN0YXR1cyI6IkFDVElWRSIsImV4cCI6MTc2NDQwMDgyMn0.-r8EtUHR7_E8dZr8oipUCsvw5sdKML2Ug6LKmZI1rMw
+2025-11-29T15:13:56.734+08:00  INFO 115444 --- [http-nio-8080-exec-1] c.e.i.JwtTokenAdminInterceptor           : 当前用户id：1
+2025-11-29T15:13:56.738+08:00  INFO 115444 --- [http-nio-8080-exec-1] c.expert.controller.ProjectsController   : 获取项目名称列表：ProjectNameListRequestDTO(page=1, pageSize=20, keyWord=null)
+2025-11-29T15:13:56.742+08:00 DEBUG 115444 --- [http-nio-8080-exec-1] c.e.mapper.ProjectsMapper.getNameList    : ==>  Preparing: select id,name,track,category,leader_name,stage,status,created_year from projects
+2025-11-29T15:13:56.743+08:00 DEBUG 115444 --- [http-nio-8080-exec-1] c.e.mapper.ProjectsMapper.getNameList    : ==> Parameters: 
+2025-11-29T15:13:56.751+08:00 DEBUG 115444 --- [http-nio-8080-exec-1] c.e.mapper.ProjectsMapper.getNameList    : <==      Total: 20
+2025-11-29T15:15:00.165+08:00  INFO 115444 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2025-11-29T15:15:00.200+08:00  INFO 115444 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2025-11-29T15:15:00.200+08:00  INFO 115444 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2025-11-29T15:15:00.200+08:00  INFO 115444 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2025-11-29T15:15:00.200+08:00  INFO 115444 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2025-11-29T15:15:00.201+08:00  INFO 115444 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2025-11-29T15:15:00.211+08:00  INFO 115444 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

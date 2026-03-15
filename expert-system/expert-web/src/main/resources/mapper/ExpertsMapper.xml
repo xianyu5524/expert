@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.expert.mapper.ExpertsMapper">
+    
+    <select id="page" resultType="com.expert.dto.ExpertPageResponseDTO">
+        select id,name,unit,title,field,expert_type,weight,guidance_count,last_invite,status from experts
+        <where>
+            <if test="name!=null and name!=''">and name like concat('%',#{name},'%')</if>
+            <if test="status!=null and status!=''">and status=#{status} </if>
+            <if test="expertType!=null and expertType!=''">and expert_type=#{expertType}</if>
+            <if test="weight!=null">and weight=#{weight}</if>
+        </where>
+    </select>
+
+    <delete id="delete">
+        delete from experts where id in
+        <foreach collection="expertIds" item="expertId" open="(" separator="," close=")">
+            #{expertId}
+        </foreach>
+    </delete>
+
+    <select id="getSysUserId">
+        select user_id from experts where id in
+        <foreach collection="expertIds" item="expertId" open="(" separator="," close=")">
+            #{expertId}
+        </foreach>
+    </select>
+
+    <select id="getExpertsForExport" resultType="com.expert.entity.Expert">
+        select * from experts
+        <where>
+            <if test="name!=null and name!=''">and name like concat('%',#{name},'%')</if>
+            <if test="expStatus!=null and expStatus!=''">and status=#{expStatus} </if>
+            <if test="expertType!=null and expertType!=''">and expert_type=#{expertType}</if>
+        </where>
+    </select>
+</mapper>

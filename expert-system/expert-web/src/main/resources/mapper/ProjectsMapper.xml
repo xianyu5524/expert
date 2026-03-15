@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.expert.mapper.ProjectsMapper">
+
+    <select id="getProjectByExpertId" resultType="com.expert.dto.ProjectResponseDTO">
+        SELECT
+            ep.`project_id` AS id,
+            p.`name` AS project_name,
+            p.`track`,
+            p.`category`,
+            ep.`role`,
+            ep.`status`,
+            p.stage,
+            ep.`created_time`
+        FROM expert_projects AS ep
+        LEFT JOIN projects AS p ON ep.project_id=p.`id`
+        where expert_id =#{expertId}
+    </select>
+
+    <select id="getNameList" resultType="com.expert.dto.ProjectNameListResponseDTO">
+        select id,name,track,category,leader_name,stage,status,created_year
+        from projects
+        <where>
+            <if test="keyWord!=null and keyWord!=''">and name like concat('%',#{keyWord},'%')</if>
+        </where>
+    </select>
+
+    <select id="getPageList" resultType="com.expert.entity.Project">
+        select * from projects
+        <where>
+            <if test="name!=null and name!=''">and name like concat('%',#{name},'%')</if>
+            <if test="track!=null and track!=''">and track=#{track}</if>
+            <if test="stage!=null and stage!=''">and stage=#{stage}</if>
+            <if test="status!=null and status!=''">and status=#{status}</if>
+            <if test="projectLevel!=null and projectLevel!=''">and project_level=#{projectLevel}</if>
+        </where>
+    </select>
+
+    <delete id="delete">
+        delete from projects where id in
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="getProjectForExport" resultType="com.expert.entity.Project">
+        select * from projects
+        <where>
+            <if test="name!=null and name!=''">and name like concat('%',#{name},'%')</if>
+            <if test="track!=null and track!=''">and track=#{track}</if>
+            <if test="stage!=null and stage!=''">and stage=#{stage}</if>
+            <if test="proStatus!=null and proStatus!=''">and status=#{proStatus}</if>
+            <if test="projectLevel!=null and projectLevel!=''">and project_level=#{projectLevel}</if>
+        </where>
+    </select>
+</mapper>

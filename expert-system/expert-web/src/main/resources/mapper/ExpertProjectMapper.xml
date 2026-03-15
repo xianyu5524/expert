@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.expert.mapper.ExpertProjectMapper">
+    <insert id="insert">
+        insert into expert_projects(expert_id,project_id,role,status,created_time) values
+        <foreach collection="expertProjects" item="eps" separator=",">
+            (#{eps.expertId},#{eps.projectId},#{eps.role},#{eps.status},#{eps.createdTime})
+        </foreach>
+    </insert>
+
+    <delete id="delete">
+        delete from expert_projects where expert_id in
+        <foreach collection="expertIds" item="expertId" open="(" separator="," close=")">
+            #{expertId}
+        </foreach>
+    </delete>
+
+    <select id="selectByExpertIdAndTrack" resultType="com.expert.entity.ExpertProject">
+        SELECT expert_projects.* FROM expert_projects
+        LEFT JOIN projects ON project_id=projects.`id`
+        WHERE expert_id=#{expertId} AND track=#{track}
+    </select>
+</mapper>

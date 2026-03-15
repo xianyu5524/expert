@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.expert.mapper.InvitationsMapper">
+
+    <select id="getInvitationById" resultType="com.expert.dto.InvitationResponseDTO">
+        SELECT
+            i.id,
+            p.name AS project_name,
+            i.invite_time,
+            su.name AS inviter_name,
+            i.status,
+            i.response_time,
+            i.notes
+        FROM invitations AS i
+                 LEFT JOIN sys_user AS su ON i.inviter_id=su.user_id
+                 LEFT JOIN projects AS p ON i.project_id=p.id
+        where expert_id=#{expertId}
+    </select>
+
+    <delete id="delete">
+        delete from invitations where expert_id in
+        <foreach collection="expertIds" item="expertId" open="(" separator="," close=")">
+            #{expertId}
+        </foreach>
+    </delete>
+
+    <select id="getInvitationPageQueryByProjectId" resultType="com.expert.dto.InvitationResponseDTO">
+        SELECT
+        i.id,
+        e.name AS expert_name,
+        p.name AS project_name,
+        i.`invite_time`,
+        i.`status`,
+        i.`response_time`,
+        i.`notes`
+        FROM invitations AS i
+        LEFT JOIN experts AS e ON i.`expert_id`=e.`id`
+        LEFT JOIN projects AS p ON i.project_id=p.id
+        <where>
+            <if test="projectId!=null">and i.project_id=#{projectId}</if>
+            <if test="status!=null and status!=''">and i.status=#{status}</if>
+            <if test="startDate!=null">and i.created_time &lt;= #{startDate}</if>
+            <if test="endDate!=null">and i.created &gt;=#{endDate}</if>
+        </where>
+    </select>
+</mapper>
